@@ -5,21 +5,30 @@
     <title>Login Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        /* Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Segoe UI", sans-serif;
-        }
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        /* Animated gradient background */
-        body {
-            min-height: 100vh;
-            background: linear-gradient(270deg, #667eea, #764ba2, #6b8dd6);
-            background-size: 600% 600%;
-            animation: gradientMove 10s ease infinite;
-            display: flex;
-            align-items: center;
-            justify-content: center
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <div class="input-group">
+            <label>Username</label>
+            <input type="text" id="username" placeholder="Enter username">
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+        </div>
+
+        <button onclick="login()">Login</button>
+
+        <div class="message" id="message"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
